@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IRFANHAMDANI_1202150092_MODUL2</string>
+    <string name="takeaway">Take Away</string>
+    <string name="dinein">Dine In</string>
+
+    <string-array name="labels_array">
+        <item>Meja 1</item>
+        <item>Meja 2</item>
+        <item>Meja 3</item>
+        <item>Meja 4</item>
+        <item>Other</item>
+    </string-array>
+</resources>

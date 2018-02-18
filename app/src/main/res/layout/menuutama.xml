@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.irfanhamdani_1202150092_modul2.MenuUtama">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="20dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:layout_below="@+id/icon"
+            android:id="@+id/pilihmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:text="Pilih Menu:"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pilihmenu"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp" >
+
+            <RadioButton
+                android:id="@+id/dinein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dinein"
+                android:textSize="17dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/takeaway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/takeaway"
+                android:textSize="17dp"
+                android:checked="true"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio"
+            android:layout_marginTop="10dp"
+            android:text="PESAN SEKARANG"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:onClick="pesansekarang"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
